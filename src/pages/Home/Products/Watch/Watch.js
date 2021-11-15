@@ -12,13 +12,15 @@ const Watch = (props) => {
   return (
     <div>
       <Col>
-        <Card>
+        <Card className="product-card">
           <Card.Img height="250px" variant="top" src={img} />
           <Card.Body>
-            <Card.Title>{brand}</Card.Title>
+            <Card.Title className="product-card-title">{brand}</Card.Title>
             <Card.Text>$ {price}</Card.Text>
             <Card.Text>{detais}</Card.Text>
-            <button onClick={handleBuyNow}>Buy Now</button>
+            <button className="primary-btn" onClick={handleBuyNow}>
+              Buy Now
+            </button>
           </Card.Body>
         </Card>
       </Col>
