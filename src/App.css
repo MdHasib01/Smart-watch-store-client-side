@@ -1,0 +1,43 @@
+.orders-main-sec {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 10px;
+}
+.order-sec {
+  border-right: 1px solid black;
+}
+.order-sec img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+.order-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order-form form {
+  background-color: #061a3a3b;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  color: #061a3a;
+}
+.order-form form ::placeholder {
+  color: #061a3a71;
+}
+.order-form form input,
+textarea {
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #061a3a;
+  padding: 10px;
+}
+.primary-btn {
+  background-color: blue;
+  color: white;
+}
